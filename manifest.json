@@ -1,0 +1,22 @@
+{
+  "name": "Highlight AWS account name",
+  "description": "Highlight AWS account name",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "scripting",
+    "tabs"
+],
+"host_permissions": [
+  "https://us-east-1.console.aws.amazon.com/*"
+],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "copy16.png",
+    "48": "copy48.png",
+    "128": "copy128.png"
+  }
+}
